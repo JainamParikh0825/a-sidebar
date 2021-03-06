@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #ececec;
+  height: 100vh;
+  font-family: "Roboto", sans-serif;
+}
+
+.burger {
+  position: absolute;
+  right: 3%;
+  top: 3%;
+  width: 40px;
+  height: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation-name: burger;
+  animation-iteration-count: infinite;
+  animation-duration: 1.5s;
+}
+
+.burger:hover {
+  cursor: pointer;
+}
+
+.burger div {
+  width: 80%;
+  height: 5px;
+  background-color: #000;
+  margin-bottom: 5px;
+  border-radius: 3px;
+}
+
+.burger div:last-child {
+  margin-bottom: 0;
+}
+
+.sidebar {
+  height: 100%;
+  width: 23%;
+  background-color: #fff;
+}
+
+.sidebar-header {
+  height: 8%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+}
+
+.sidebar-header h1 {
+  font-weight: 700;
+  font-size: 2.2em;
+  color: #333;
+}
+
+.close-sidebar-btn {
+  background: none;
+  outline: none;
+  border: none;
+  transition: transform 0.5s;
+}
+
+.close-sidebar-btn i {
+  font-size: 2.2em;
+  font-weight: 700;
+  color: #b71c1c;
+}
+
+.close-sidebar-btn:hover {
+  transform: rotate(360deg);
+  cursor: pointer;
+}
+
+.nav-links {
+  height: 40%;
+}
+
+.nav-links ul {
+  height: 100%;
+}
+
+.nav-links ul li {
+  height: 25%;
+  list-style-type: none;
+  position: relative;
+}
+
+.nav-links ul li a {
+  text-decoration: none;
+  display: block;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  padding: 1.5em 1.5em;
+  font-size: 1.5em;
+  font-weight: 300;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-links ul li a:hover {
+  background-color: mediumpurple;
+  color: #fff;
+}
+
+@keyframes burger {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.3);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
