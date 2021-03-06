@@ -124,3 +124,11 @@ body {
     transform: scale(1);
   }
 }
+
+.sidebar.open {
+  display: block;
+}
+
+.sidebar.close {
+  display: none;
+}
